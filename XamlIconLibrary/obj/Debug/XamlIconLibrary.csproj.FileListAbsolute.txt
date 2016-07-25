@@ -7,3 +7,5 @@ C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\bin\Debug\XamlIconL
 C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\bin\Debug\XamlIconLibrary.pdb
 C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Debug\XamlIconLibrary.dll
 C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Debug\XamlIconLibrary.pdb
+C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Debug\Akiross_Audio_Button_Set_4.baml
+C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Debug\Akiross_Audio_Button_Set_4.g.cs

@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="XamlIconLibrary.Akiross_Audio_Button_Set_4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Canvas Width="50.3908446126037" Height="50.3053963385331" >
+            <Canvas Canvas.Left="0.000932676260788412" Canvas.Top="-0.000155911959353716">
+                <Canvas>
+                    <Canvas>
+                        <Path Data="F1M566.74606,-39.409218A35.708893,35.708893,0,1,1,566.73848,-40.145326" StrokeThickness="2.95431923866272" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4">
+                            <Path.Fill>
+                                <RadialGradientBrush Center="531.03717,-27.63166" RadiusX="37.708893" RadiusY="37.708893" GradientOrigin="531.03717,-27.63166" MappingMode="Absolute">
+                                    <RadialGradientBrush.GradientStops>
+                                        <GradientStop Color="#FF8FE68C" Offset="0" ></GradientStop>
+                                        <GradientStop Color="#FF29902B" Offset="1" ></GradientStop>
+                                    </RadialGradientBrush.GradientStops>
+                                    <RadialGradientBrush.Transform>
+                                        <MatrixTransform Matrix="0.870558202266693,0,0,0.870558202266693,68.7383880615234,-5.10119867324829" ></MatrixTransform>
+                                    </RadialGradientBrush.Transform>
+                                </RadialGradientBrush>
+                            </Path.Fill>
+                            <Path.Stroke>
+                                <LinearGradientBrush StartPoint="531.00635,-1.2397567" EndPoint="531.00635,-76.400444" MappingMode="Absolute" SpreadMethod="Pad">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FF286A27" Offset="0" ></GradientStop>
+                                        <GradientStop Color="#FF264826" Offset="1" ></GradientStop>
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                            <Path.RenderTransform>
+                                <MatrixTransform Matrix="1,0,0,1,-49.888427734375,-125.27271270752" ></MatrixTransform>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Canvas>
+                            <Path Data="F1M523.42302,-241.28365L523.42302,-202.95888 556.35974,-221.9749 523.42302,-241.28365z" Fill="#80000000" Stroke="#80000000" StrokeThickness="3.07599997520447" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" Opacity="0.5" ></Path>
+                            <Path Data="F1M521.65524,-243.05142L521.65524,-204.72664 554.59196,-223.74267 521.65524,-243.05142z" Fill="#FFD6FFDC" Stroke="#FF33543C" StrokeThickness="3.07619142532349" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" ></Path>
+                            <Canvas.RenderTransform>
+                                <MatrixTransform Matrix="1,0,0,1,-54.858699798584,58.8232688903809" ></MatrixTransform>
+                            </Canvas.RenderTransform>
+                        </Canvas>
+                        <Path Data="F1M581.24179,-21.201218A23.688078,17.854446,0,1,1,533.86563,-21.201218A23.688078,17.854446,0,1,1,581.24179,-21.201218z" Stroke="{x:Null}" StrokeThickness="1">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="557.55371,-39.055664" EndPoint="557.55371,-3.3467712" MappingMode="Absolute" SpreadMethod="Pad">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" ></GradientStop>
+                                        <GradientStop Color="#00FFFFFF" Offset="1" ></GradientStop>
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                            <Path.RenderTransform>
+                                <MatrixTransform Matrix="1.01492536067963,0,0,1.03960394859314,-84.7266845703125,-157.136749267578" ></MatrixTransform>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path Data="F1M451.4166,-150.26926C458.5178,-134.47141 476.85907,-126.84623 493.16944,-133.22123 509.47092,-139.59275 517.7814,-157.61841 512.30576,-174.03735 507.88172,-162.93148 499.03206,-153.62636 487.02784,-148.93445 475.01193,-144.23796 462.20568,-145.09352 451.4166,-150.26926z" Stroke="{x:Null}" StrokeThickness="1">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="493.474169940959,-133.338522737016" EndPoint="486.709026263318,-158.58628965847" MappingMode="Absolute" SpreadMethod="Pad">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" ></GradientStop>
+                                        <GradientStop Color="#00FFFFFF" Offset="1" ></GradientStop>
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Canvas.RenderTransform>
+                            <MatrixTransform Matrix="0.677549779415131,0,0,0.676400482654572,-394.662322998047,131.968307495117" ></MatrixTransform>
+                        </Canvas.RenderTransform>
+                    </Canvas>
+                    <Canvas.RenderTransform>
+                        <MatrixTransform Matrix="1,0,0,1,93.8546295166016,4.5761513710022" ></MatrixTransform>
+                    </Canvas.RenderTransform>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</UserControl>
