@@ -71,7 +71,7 @@
     <Compile Include="Facebook-Messenger-Icon.xaml.cs">
       <DependentUpon>Facebook-Messenger-Icon.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Icon.cs" />
+    <Compile Include="Icons.cs" />
     <Compile Include="GoogleMaterialIcon.xaml.cs">
       <DependentUpon>GoogleMaterialIcon.xaml</DependentUpon>
     </Compile>
