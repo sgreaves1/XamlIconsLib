@@ -6,6 +6,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="Root">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel ZIndex="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Label Content="{Binding ElementName=Root, Path=Source}" FontSize="10" Margin="0" Padding="0"/>
+            <Label Content="{Binding ElementName=Root, Path=Source}" FontSize="10" Margin="0" Padding="0" Visibility="{Binding ElementName=Root, Path=ShowCredits, Converter={StaticResource BooleanToVisibilityConverter}}"/>
         </StackPanel>
 
         <Path Grid.Row="0" Grid.RowSpan="3" 
@@ -32,7 +37,7 @@
               />
 
         <StackPanel  ZIndex="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <Label  Content="{Binding ElementName=Root, Path=Author}" FontSize="10" Margin="0" Padding="0"/>
+            <Label  Content="{Binding ElementName=Root, Path=Author}" FontSize="10" Margin="0" Padding="0" Visibility="{Binding ElementName=Root, Path=ShowCredits, Converter={StaticResource BooleanToVisibilityConverter}}"/>
         </StackPanel>
     </Grid>
 </UserControl>
