@@ -1,1 +1,0 @@
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIcons\bin\Release\XamlIcons.exe.config

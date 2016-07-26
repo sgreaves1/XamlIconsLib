@@ -74,6 +74,10 @@
     <Compile Include="Facebook-Messenger-Icon.xaml.cs">
       <DependentUpon>Facebook-Messenger-Icon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Icon.cs" />
+    <Compile Include="MaterialIcon.xaml.cs">
+      <DependentUpon>MaterialIcon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Facebook-Messenger-Icon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MaterialIcon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

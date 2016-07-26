@@ -1,8 +1,0 @@
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\bin\Release\XamlIconLibrary.dll
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\bin\Release\XamlIconLibrary.pdb
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\BiohazardIcon.baml
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\BiohazardIcon.g.cs
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\XamlIconLibrary_MarkupCompile.cache
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\XamlIconLibrary.g.resources
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\XamlIconLibrary.dll
-C:\own stuff\XamlIconLibrary\XamlIconLibrary\XamlIconLibrary\obj\Release\XamlIconLibrary.pdb

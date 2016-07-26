@@ -11,7 +11,7 @@
 
         <ItemsControl Width="{Binding ElementName=ThisWindow, Path=ActualWidth}">
             <WrapPanel Width="{Binding ElementName=ThisWindow, Path=ActualWidth}">
-                <xamlIconLibrary:_3DRotation ShowCredits="False" Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
+                <xamlIconLibrary:MaterialIcon Icon="_3DRotation" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 <xamlIconLibrary:AccessibilityIcon Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
                 <xamlIconLibrary:AccountBalance Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
                 <xamlIconLibrary:AccountBalanceWallet Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
@@ -20,8 +20,7 @@
                 <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="100" Height="100" BorderBrush="Black" BorderThickness="1"/>
                 <xamlIconLibrary:Android Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
                 <xamlIconLibrary:Biohazard Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
-                <xamlIconLibrary:Facebook_Messenger_Icon Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
-                
+                <xamlIconLibrary:Facebook_Messenger_Icon Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:Facebook_Messenger_Icon>
             </WrapPanel>
         </ItemsControl>
 
