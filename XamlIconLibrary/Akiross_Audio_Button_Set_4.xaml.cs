@@ -44,5 +44,15 @@ namespace XamlIconLibrary
         // Using a DependencyProperty as the backing store for Author.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SourceProperty =
             DependencyProperty.Register("Source", typeof(string), typeof(Akiross_Audio_Button_Set_4), new PropertyMetadata("http://www.xamalot.com/"));
+
+        public bool ShowCredits
+        {
+            get { return (bool)GetValue(ShowCreditsProperty); }
+            set { SetValue(ShowCreditsProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ShowCredits.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ShowCreditsProperty =
+            DependencyProperty.Register("ShowCredits", typeof(bool), typeof(Akiross_Audio_Button_Set_4), new PropertyMetadata(false));
     }
 }
