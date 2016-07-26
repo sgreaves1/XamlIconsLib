@@ -61,6 +61,16 @@ namespace XamlIconLibrary
                 new PropertyMetadata("https://design.google.com/icons/"));
 
         /// <summary>
+        /// Dependency Property used to back the <see cref="ShowCredits"/> Property
+        /// </summary>
+        public static readonly DependencyProperty ShowCreditsProperty =
+            DependencyProperty.Register("ShowCredits", 
+                typeof(bool), 
+                typeof(GoogleMaterialIcon), 
+                new PropertyMetadata(false));
+
+
+        /// <summary>
         /// Constructor
         /// </summary>
         public GoogleMaterialIcon()
@@ -132,6 +142,15 @@ namespace XamlIconLibrary
         {
             get { return (string)GetValue(SourceProperty); }
             private set { SetValue(SourceProperty, value); }
+        }
+
+        /// <summary>
+        /// If true shows author and source
+        /// </summary>
+        public bool ShowCredits
+        {
+            get { return (bool)GetValue(ShowCreditsProperty); }
+            set { SetValue(ShowCreditsProperty, value); }
         }
     }
 }
