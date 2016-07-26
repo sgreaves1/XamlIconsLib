@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Media;
 namespace XamlIconLibrary
 {
@@ -21,9 +22,21 @@ namespace XamlIconLibrary
         /// </summary>
         public static readonly DependencyProperty IconProperty =
             DependencyProperty.Register("Icon", 
-                typeof(Icon), 
+                typeof(Icons), 
                 typeof(GoogleMaterialIcon), 
-                new PropertyMetadata(null));
+                new PropertyMetadata(Icons._Default, PropertyChangedCallback));
+        
+        /// <summary>
+        /// What to do when the icon changes
+        /// </summary>
+        /// <param name="dependencyObject"></param>
+        /// <param name="dependencyPropertyChangedEventArgs"></param>
+        private static void PropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+        {
+            GoogleMaterialIcon uc = (GoogleMaterialIcon)dependencyObject;
+
+            uc.Data = IconHelper.UpdateData(uc.Icon);
+        }
 
         /// <summary>
         /// Dependency Property used to back the <see cref="IconBorderColor"/> Property
@@ -56,9 +69,9 @@ namespace XamlIconLibrary
         /// <summary>
         /// Select a predefined icon to use 
         /// </summary>
-        public Icon Icon
+        public Icons Icon
         {
-            get { return (Icon)GetValue(IconProperty); }
+            get { return (Icons)GetValue(IconProperty); }
             set
             {
                 SetValue(IconProperty, value);
