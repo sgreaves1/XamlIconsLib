@@ -10,8 +10,8 @@
     <StackPanel Orientation="Horizontal">
         <xamlIconLibrary:BiohazardIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
         <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="100" Height="100"/>
-        <xamlIconLibrary:BiohazardIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-        <xamlIconLibrary:BiohazardIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-        <xamlIconLibrary:BiohazardIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+        <xamlIconLibrary:_3DRotationIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+        <xamlIconLibrary:AccountBalanceWallet Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+        <xamlIconLibrary:AccountBox Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
     </StackPanel>
 </Window>
