@@ -37,5 +37,8 @@ namespace XamlIconLibrary
         {
             InitializeComponent();
         }
+
+        public string Author => "Google";
+        public string Source => "https://design.google.com/icons/";
     }
 }
