@@ -7,11 +7,33 @@
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="Root">
     <Grid>
-        <Path Fill="{Binding ElementName=Root, Path=Foreground}" 
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel ZIndex="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label Content="{Binding ElementName=Root, Path=Source}" FontSize="10" Margin="0" Padding="0"/>
+        </StackPanel>
+        
+        <Path Grid.Row="0" Grid.RowSpan="3" 
+              Grid.Column="0" Grid.ColumnSpan="2" 
+              Fill="{Binding ElementName=Root, Path=Foreground}" 
               Stretch="Fill" 
               Data="F1 M24,24z M0,0z M12,2C6.48,2 2,6.48 2,12 2,17.52 6.48,22 12,22 17.52,22 22,17.52 22,12 22,6.48 17.52,2 12,2z M12,5C13.66,5 15,6.34 15,8 15,9.66 13.66,11 12,11 10.34,11 9,9.66 9,8 9,6.34 10.34,5 12,5z M12,19.2C9.5,19.2 7.29,17.92 6,15.98 6.03,13.99 10,12.9 12,12.9 13.99,12.9 17.97,13.99 18,15.98 16.71,17.92 14.5,19.2 12,19.2z"
               Stroke="{Binding ElementName=Root, Path=IconBorderColor}"
               StrokeThickness="{Binding ElementName=Root, Path=IconBorderThickness}"
               />
+
+        <StackPanel  ZIndex="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Label  Content="{Binding ElementName=Root, Path=Author}" FontSize="10" Margin="0" Padding="0"/>
+        </StackPanel>
     </Grid>
 </UserControl>

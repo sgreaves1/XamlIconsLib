@@ -4,9 +4,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300"
+             x:Name="Root">
     <Grid>
-        <Canvas Width="50.3908446126037" Height="50.3053963385331" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel ZIndex="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label Content="{Binding ElementName=Root, Path=Source}" FontSize="10" Margin="0" Padding="0"/>
+        </StackPanel>
+
+        <Canvas Grid.Row="0" Grid.RowSpan="3" 
+              Grid.Column="0" Grid.ColumnSpan="2"  
+            Width="50.3908446126037" Height="50.3053963385331" >
             <Canvas Canvas.Left="0.000932676260788412" Canvas.Top="-0.000155911959353716">
                 <Canvas>
                     <Canvas>
@@ -74,5 +93,9 @@
                 </Canvas>
             </Canvas>
         </Canvas>
+
+        <StackPanel  ZIndex="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Label  Content="{Binding ElementName=Root, Path=Author}" FontSize="10" Margin="0" Padding="0"/>
+        </StackPanel>
     </Grid>
 </UserControl>
