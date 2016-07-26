@@ -19,8 +19,8 @@
                 <xamlIconLibrary:GoogleMaterialIcon Icon="AccountCircle" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="100" Height="100" BorderBrush="Black" BorderThickness="1"/>
                 <xamlIconLibrary:GoogleMaterialIcon Icon="Android" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                <xamlIconLibrary:Biohazard Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"/>
-                <xamlIconLibrary:Facebook_Messenger_Icon Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:Facebook_Messenger_Icon>
+                <xamlIconLibrary:MaterialDesignIcon Icon="BioHazard" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                <xamlIconLibrary:MaterialDesignIcon Icon="FacebookMessenger" Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
             </WrapPanel>
         </ItemsControl>
 

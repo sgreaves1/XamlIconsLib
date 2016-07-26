@@ -3,9 +3,9 @@ using System.Windows.Media;
 namespace XamlIconLibrary
 {
     /// <summary>
-    /// Interaction logic for GoogleMaterialIcon.xaml
+    /// Interaction logic for MaterialDesginIcon.xaml
     /// </summary>
-    public partial class GoogleMaterialIcon
+    public partial class MaterialDesignIcon
     {
         /// <summary>
         /// Dependency Property used to back the <see cref="Data"/> Property
@@ -13,7 +13,7 @@ namespace XamlIconLibrary
         public static readonly DependencyProperty DataProperty =
             DependencyProperty.Register("Data",
                 typeof(string),
-                typeof(GoogleMaterialIcon),
+                typeof(MaterialDesignIcon),
                 new PropertyMetadata(""));
 
         /// <summary>
@@ -21,9 +21,9 @@ namespace XamlIconLibrary
         /// </summary>
         public static readonly DependencyProperty IconProperty =
             DependencyProperty.Register("Icon", 
-                typeof(GoogleMaterialIcons), 
-                typeof(GoogleMaterialIcon), 
-                new PropertyMetadata(GoogleMaterialIcons._Default, PropertyChangedCallback));
+                typeof(MaterialDesignIcons), 
+                typeof(MaterialDesignIcon), 
+                new PropertyMetadata(MaterialDesignIcons._Default, PropertyChangedCallback));
         
         /// <summary>
         /// What to do when the icon changes
@@ -32,9 +32,9 @@ namespace XamlIconLibrary
         /// <param name="dependencyPropertyChangedEventArgs"></param>
         private static void PropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {
-            GoogleMaterialIcon uc = (GoogleMaterialIcon)dependencyObject;
+            MaterialDesignIcon uc = (MaterialDesignIcon)dependencyObject;
 
-            uc.Data = GoogleMaterialIconsHelper.UpdateData(uc.Icon);
+            uc.Data = MaterialDesignIconsHelper.UpdateData(uc.Icon);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace XamlIconLibrary
         public static readonly DependencyProperty IconBorderColorProperty =
             DependencyProperty.Register("IconBorderColor", 
                 typeof(Brush), 
-                typeof(GoogleMaterialIcon), 
+                typeof(MaterialDesignIcon), 
                 new PropertyMetadata(Brushes.Black));
 
         /// <summary>
@@ -52,13 +52,13 @@ namespace XamlIconLibrary
         public static readonly DependencyProperty IconBorderThicknessProperty =
             DependencyProperty.Register("IconBorderThickness",
                 typeof(int), 
-                typeof(GoogleMaterialIcon), 
+                typeof(MaterialDesignIcon), 
                 new PropertyMetadata(0));
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public GoogleMaterialIcon()
+        public MaterialDesignIcon()
         {
             InitializeComponent();
         }
@@ -66,9 +66,9 @@ namespace XamlIconLibrary
         /// <summary>
         /// Select a predefined icon to use 
         /// </summary>
-        public GoogleMaterialIcons Icon
+        public MaterialDesignIcons Icon
         {
-            get { return (GoogleMaterialIcons)GetValue(IconProperty); }
+            get { return (MaterialDesignIcons)GetValue(IconProperty); }
             set { SetValue(IconProperty, value); }
         }
 
