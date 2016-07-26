@@ -65,6 +65,9 @@
     <Compile Include="Akiross_Audio_Button_Set_4.xaml.cs">
       <DependentUpon>Akiross_Audio_Button_Set_4.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Android.xaml.cs">
+      <DependentUpon>Android.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Biohazard.xaml.cs">
       <DependentUpon>Biohazard.xaml</DependentUpon>
     </Compile>
@@ -99,6 +102,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Akiross_Audio_Button_Set_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Android.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
