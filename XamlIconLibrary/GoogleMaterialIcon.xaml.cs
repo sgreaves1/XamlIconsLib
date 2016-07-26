@@ -26,18 +26,6 @@ namespace XamlIconLibrary
                 new PropertyMetadata(GoogleMaterialIcons._Default, PropertyChangedCallback));
         
         /// <summary>
-        /// What to do when the icon changes
-        /// </summary>
-        /// <param name="dependencyObject"></param>
-        /// <param name="dependencyPropertyChangedEventArgs"></param>
-        private static void PropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-        {
-            GoogleMaterialIcon uc = (GoogleMaterialIcon)dependencyObject;
-
-            uc.Data = GoogleMaterialIconsHelper.UpdateData(uc.Icon);
-        }
-
-        /// <summary>
         /// Dependency Property used to back the <see cref="IconBorderColor"/> Property
         /// </summary>
         public static readonly DependencyProperty IconBorderColorProperty =
@@ -54,6 +42,23 @@ namespace XamlIconLibrary
                 typeof(int), 
                 typeof(GoogleMaterialIcon), 
                 new PropertyMetadata(0));
+        
+        /// <summary>
+        /// Dependency Property used to back the <see cref="Author"/> Property
+        /// </summary>
+        public static readonly DependencyProperty AuthorProperty =
+            DependencyProperty.Register("Author",
+                typeof(string),
+                typeof(GoogleMaterialIcon), new PropertyMetadata("Google"));
+        
+        /// <summary>
+        /// Dependency Property used to back the <see cref="Source"/> Property
+        /// </summary>
+        public static readonly DependencyProperty SourceProperty =
+            DependencyProperty.Register("Source",
+                typeof(string), 
+                typeof(GoogleMaterialIcon), 
+                new PropertyMetadata("https://design.google.com/icons/"));
 
         /// <summary>
         /// Constructor
@@ -62,7 +67,19 @@ namespace XamlIconLibrary
         {
             InitializeComponent();
         }
-        
+
+        /// <summary>
+        /// What to do when the icon changes
+        /// </summary>
+        /// <param name="dependencyObject"></param>
+        /// <param name="dependencyPropertyChangedEventArgs"></param>
+        private static void PropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+        {
+            GoogleMaterialIcon uc = (GoogleMaterialIcon)dependencyObject;
+
+            uc.Data = GoogleMaterialIconsHelper.UpdateData(uc.Icon);
+        }
+
         /// <summary>
         /// Select a predefined icon to use 
         /// </summary>
@@ -97,6 +114,24 @@ namespace XamlIconLibrary
         {
             get { return (int)GetValue(IconBorderThicknessProperty); }
             set { SetValue(IconBorderThicknessProperty, value); }
+        }
+
+        /// <summary>
+        /// Property used to set the icons author name
+        /// </summary>
+        public string Author
+        {
+            get { return (string)GetValue(AuthorProperty); }
+            private set { SetValue(AuthorProperty, value); }
+        }
+
+        /// <summary>
+        /// Property used to set the location the icon came from
+        /// </summary>
+        public string Source
+        {
+            get { return (string)GetValue(SourceProperty); }
+            private set { SetValue(SourceProperty, value); }
         }
     }
 }
