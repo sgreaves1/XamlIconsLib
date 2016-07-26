@@ -59,6 +59,9 @@
     <Compile Include="AccountBox.xaml.cs">
       <DependentUpon>AccountBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AccountCircle.xaml.cs">
+      <DependentUpon>AccountCircle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Akiross_Audio_Button_Set_4.xaml.cs">
       <DependentUpon>Akiross_Audio_Button_Set_4.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AccountBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountCircle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
