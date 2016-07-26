@@ -3,14 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:XamlIcons"
         xmlns:xamlIconLibrary="clr-namespace:XamlIconLibrary;assembly=XamlIconLibrary"
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="525">
     <StackPanel Orientation="Horizontal">
-        <xamlIconLibrary:BiohazardIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+        <xamlIconLibrary:Biohazard Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
         <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="100" Height="100"/>
-        <xamlIconLibrary:_3DRotationIcon Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+        <xamlIconLibrary:_3DRotation Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
         <xamlIconLibrary:AccountBalanceWallet Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
         <xamlIconLibrary:AccountBox Width="100" Height="100" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
     </StackPanel>
