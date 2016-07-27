@@ -83,7 +83,7 @@ namespace XamlIconLibrary
             DependencyProperty.Register("ShowCredits",
                 typeof(bool),
                 typeof(MaterialDesignIcon),
-                new PropertyMetadata(true));
+                new PropertyMetadata(false));
 
         /// <summary>
         /// Constructor
