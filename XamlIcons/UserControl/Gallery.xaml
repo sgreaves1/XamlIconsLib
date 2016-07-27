@@ -10,12 +10,12 @@
     <UserControl.Resources>
 
         <ControlTemplate x:Key="IconTemplate" TargetType="ToggleButton">
-                <Border Name="Border" BorderBrush="Black" BorderThickness="3" Background="AliceBlue">
+                <Border Name="Border" BorderBrush="Black" BorderThickness="3" Background="LightBlue">
                     <ContentPresenter Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" Margin="{TemplateBinding Padding}"/>
                 </Border>
                 <ControlTemplate.Triggers>
                     <Trigger Property="ToggleButton.IsChecked" Value="True">
-                        <Setter TargetName="Border" Property="Background" Value="LightBlue"/>
+                        <Setter TargetName="Border" Property="Background" Value="Blue"/>
                     </Trigger>
                 </ControlTemplate.Triggers>
         </ControlTemplate>
@@ -30,6 +30,7 @@
             <Setter Property="CommandParameter" Value="{Binding ElementName=ToggleButton1}"/>
             <Setter Property="IsChecked" Value="{Binding Path=IsSelected, Mode=TwoWay}"/>
             <Setter Property="ToolTip" Value="{StaticResource IconToolTip}"/>
+            <Setter Property="Opacity" Value="0.2"/>
             <Setter Property="Template" Value="{StaticResource IconTemplate}"/>
             
             <Style.Triggers>
