@@ -1,0 +1,279 @@
+﻿<UserControl x:Class="XamlIcons.UserControl.Gallery"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:xamlIconLibrary="clr-namespace:XamlIconLibrary;assembly=XamlIconLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    
+    <UserControl.Resources>
+
+        <ControlTemplate x:Key="IconTemplate" TargetType="ToggleButton">
+                <Border Name="Border" BorderBrush="Black" BorderThickness="3" Background="AliceBlue">
+                    <ContentPresenter Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" Margin="{TemplateBinding Padding}"/>
+                </Border>
+                <ControlTemplate.Triggers>
+                    <Trigger Property="ToggleButton.IsChecked" Value="True">
+                        <Setter TargetName="Border" Property="Background" Value="LightBlue"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <StackPanel x:Key="IconToolTip">
+            <TextBlock Text="{Binding Path=Name}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Path=Author}"/>
+        </StackPanel>
+        
+        <Style TargetType="ToggleButton">
+            <Setter Property="Command" Value="{Binding ElementName=Root, Path=IconSelectedCommand}"/>
+            <Setter Property="CommandParameter" Value="{Binding ElementName=ToggleButton1}"/>
+            <Setter Property="IsChecked" Value="{Binding Path=IsSelected, Mode=TwoWay}"/>
+            <Setter Property="ToolTip" Value="{StaticResource IconToolTip}"/>
+            <Setter Property="Template" Value="{StaticResource IconTemplate}"/>
+            
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="ToggleButton.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             To="1"
+                                             Duration="0:0:0.25"
+                                             AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ToggleButton.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             To="0.2"
+                                             Duration="0:0:0.25"
+                                             AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <ScrollViewer>
+            <ItemsControl>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="_3DRotation" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Accessibility" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBalance" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBalanceWallet" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBox" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountCircle" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AddShoppingCart" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Alarm" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmAdd" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmOff" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmOn" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AllOut" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Android" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Announcement" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="ArrowDownward" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="ArrowUpward" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AspectRatio" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Assessment" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AssessmentInd" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AssessmentLate" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Assignment" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AttachFile" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="AttachMoney" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="BorderColor" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Clear" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Code" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="ContentCopy" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Delete" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="DeleteForever" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Eject" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="FastForward" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="FastRewind" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Fingerprint" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="FormatColorFill" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward5" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward10" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward30" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Fullscreen" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="KeyboardArrowDown" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="KeyboardArrowUp" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Pause" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="PlayArrow" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay5" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay10" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay30" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Reply" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="ReplyAll" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="RotateLeft" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="RotateRight" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="SkipNext" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="SkipPrevious" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Speaker" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="StarHalf" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Stop" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Swaphoriz" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Weekend" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                
+                <ToggleButton>
+                    <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="50" Height="50" BorderBrush="Black" BorderThickness="1"/>
+                </ToggleButton>
+                
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccessPoint" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccessPointNetwork" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountAlert" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountCardDetails" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountCheck" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountConvert" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountKey" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountMinus" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="BioHazard" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="FacebookMessenger" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

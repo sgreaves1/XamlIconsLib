@@ -3,76 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:xamlIconLibrary="clr-namespace:XamlIconLibrary;assembly=XamlIconLibrary"
+        xmlns:userControl="clr-namespace:XamlIcons.UserControl"
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="525"
         x:Name="ThisWindow">
     <Grid>
-        <ScrollViewer>
-            <ItemsControl Width="{Binding ElementName=ThisWindow, Path=ActualWidth}">
-                <WrapPanel Width="{Binding ElementName=ThisWindow, Path=ActualWidth}">
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="_3DRotation" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Accessibility" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBalance" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBalanceWallet" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountBox" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AccountCircle" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AddShoppingCart" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Alarm" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmAdd" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmOff" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AlarmOn" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AllOut" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="100" Height="100" BorderBrush="Black" BorderThickness="1"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Android" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Announcement" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="ArrowDownward" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="ArrowUpward" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AspectRatio" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Assessment" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AssessmentInd" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AssessmentLate" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Assignment" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AttachFile" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="AttachMoney" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="BorderColor" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Clear" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Code" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="ContentCopy" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Delete" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="DeleteForever" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Eject" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="FastForward" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="FastRewind" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Fingerprint" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="FormatColorFill" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward5" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward10" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Forward30" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Fullscreen" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="KeyboardArrowDown" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="KeyboardArrowUp" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Pause" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="PlayArrow" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay5" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay10" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Replay30" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Reply" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="ReplyAll" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="RotateLeft" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="RotateRight" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="SkipNext" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="SkipPrevious" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Speaker" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="StarHalf" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Stop" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Swaphoriz" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:GoogleMaterialIcon Icon="Weekend" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:MaterialDesignIcon Icon="BioHazard" Width="100" Height="100" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                    <xamlIconLibrary:MaterialDesignIcon Icon="FacebookMessenger" Width="100" Height="100" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
-                </WrapPanel>
-            </ItemsControl>
-        </ScrollViewer>
+        <userControl:Gallery/>
     </Grid>
 </Window>
