@@ -34,7 +34,10 @@ namespace XamlIconLibrary
         {
             MaterialDesignIcon uc = (MaterialDesignIcon)dependencyObject;
 
-            uc.Data = MaterialDesignIconsHelper.UpdateData(uc.Icon);
+            IconInformation info = MaterialDesignIconsHelper.UpdateData(uc.Icon);
+
+            uc.Data = info._data;
+            uc.Author = info._author;
         }
 
         /// <summary>
@@ -62,7 +65,7 @@ namespace XamlIconLibrary
             DependencyProperty.Register("Author",
                 typeof(string),
                 typeof(MaterialDesignIcon), 
-                new PropertyMetadata(""));
+                new PropertyMetadata("Unknown"));
 
         /// <summary>
         /// Dependency Property used to back the <see cref="Source"/> Property
@@ -71,7 +74,7 @@ namespace XamlIconLibrary
             DependencyProperty.Register("Source",
                 typeof(string),
                 typeof(MaterialDesignIcon),
-                new PropertyMetadata(""));
+                new PropertyMetadata("https://materialdesignicons.com"));
 
         /// <summary>
         /// Dependency Property used to back the <see cref="ShowCredits"/> Property
@@ -80,7 +83,7 @@ namespace XamlIconLibrary
             DependencyProperty.Register("ShowCredits",
                 typeof(bool),
                 typeof(MaterialDesignIcon),
-                new PropertyMetadata(false));
+                new PropertyMetadata(true));
 
         /// <summary>
         /// Constructor
