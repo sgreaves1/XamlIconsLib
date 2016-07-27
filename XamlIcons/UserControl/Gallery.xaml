@@ -268,6 +268,42 @@
                     <xamlIconLibrary:MaterialDesignIcon Icon="AccountMinus" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountMultipleMinus" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountNetwork" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountOff" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountRemove" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountSearch" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountSettings" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountSettingsVariant" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountStar" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountStarVariant" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AccountSwitch" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="AirConditioner" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Bio" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="BioHazard" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
