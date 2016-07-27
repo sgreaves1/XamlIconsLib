@@ -6,13 +6,40 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="Root">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel ZIndex="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label Content="{Binding ElementName=Root, Path=Source}" FontSize="10" Margin="0" Padding="0" Visibility="{Binding ElementName=Root, Path=ShowCredits, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        </StackPanel>
+        
         <Path Data="{Binding ElementName=Root, Path=Data}" 
+              Grid.Row="0" Grid.RowSpan="3" 
+              Grid.Column="0" Grid.ColumnSpan="2"
               Stroke="{Binding ElementName=Root, Path=IconBorderColor}"
               StrokeThickness="{Binding ElementName=Root, Path=IconBorderThickness}"
               Fill="{Binding ElementName=Root, Path=Foreground}" 
               Width="{Binding ElementName=Root, Path=ActualWidth}"
               Height="{Binding ElementName=Root, Path=ActualHeight}"
               Stretch="Fill" />
+
+        <StackPanel  ZIndex="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Label  Content="{Binding ElementName=Root, Path=Author}" FontSize="10" Margin="0" Padding="0" Visibility="{Binding ElementName=Root, Path=ShowCredits, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        </StackPanel>
+
     </Grid>
 </UserControl>
