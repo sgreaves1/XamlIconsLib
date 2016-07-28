@@ -64,7 +64,7 @@
     };
 
     
-    public static class GoogleMaterialIconsHelper
+    internal static class GoogleMaterialIconsHelper
     {
         /// <summary>
         /// Method used to return the data string when the GoogleMaterialIcons property is updated

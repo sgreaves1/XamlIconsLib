@@ -49,7 +49,7 @@ namespace XamlIconLibrary
     /// <summary>
     /// structure used to pass back author and data
     /// </summary>
-    public struct IconInformation
+    internal struct IconInformation
     {
         public string _data;
         public string _author;
@@ -58,12 +58,12 @@ namespace XamlIconLibrary
     /// <summary>
     /// Static class used to help with <see cref="MaterialDesignIcons"/>
     /// </summary>
-    public static class MaterialDesignIconsHelper
+    internal static class MaterialDesignIconsHelper
     {
         /// <summary>
         /// Method used to return the data string when the GoogleMaterialIcons property is updated
         /// </summary>
-        public static IconInformation UpdateData(MaterialDesignIcons icon)
+        internal static IconInformation UpdateData(MaterialDesignIcons icon)
         {
             IconInformation info = new IconInformation();
 

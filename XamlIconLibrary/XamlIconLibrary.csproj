@@ -56,6 +56,10 @@
     </Compile>
     <Compile Include="MaterialDesignIcons.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XamalotIcon.xaml.cs">
+      <DependentUpon>XamalotIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XamalotIcons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Akiross_Audio_Button_Set_4.xaml">
@@ -67,6 +71,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="GoogleMaterialIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XamalotIcon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
