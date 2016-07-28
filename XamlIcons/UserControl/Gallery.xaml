@@ -343,6 +343,18 @@
                 <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="SpeakerOff" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Xml" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Yeast" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Yelp" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="YingYang" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
                 
             </ItemsControl>
         </ScrollViewer>
