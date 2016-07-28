@@ -12,7 +12,8 @@ namespace XamlIconLibrary
     public enum XamalotIcons
     {
         _Default,
-        AkirossAudioButtonSet4
+        AkirossAudioButtonSet4,
+        TangoXOfficeCalender
     }
 
     /// <summary>
@@ -20,7 +21,8 @@ namespace XamlIconLibrary
     /// </summary>
     internal struct XamalotIconInformation
     {
-        public string _data;
+        public bool AkirossAudioButtonSet4Visible;
+        public bool TangoXOfficeCalenderVisible;
         public string _author;
     }
 
@@ -29,6 +31,34 @@ namespace XamlIconLibrary
     /// </summary>
     internal static class XamalotIconsHelper
     {
+        /// <summary>
+        /// Method used to return the bools when the XamalotIcons property is updated
+        /// </summary>
+        internal static XamalotIconInformation UpdateData(XamalotIcons icon)
+        {
+            XamalotIconInformation info = new XamalotIconInformation();
+            
+            switch (icon)
+            {
+                case XamalotIcons._Default:
+                    info._author = "Unknown";
+                    break;
+                case XamalotIcons.AkirossAudioButtonSet4:
+                    info.AkirossAudioButtonSet4Visible = true;
+                    info._author = "Akiross";
+                    break;
+                case XamalotIcons.TangoXOfficeCalender:
+                    info.TangoXOfficeCalenderVisible = true;
+                    info._author = "Tango";
+                    break;
+
+                default:
+                    info._author = "Unknown";
+                    break;
+            }
+
+            return info;
+        }
     }
 
 

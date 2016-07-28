@@ -68,6 +68,14 @@
                 </ItemsControl.ItemsPanel>
                 
                 <ToggleButton>
+                    <xamlIconLibrary:XamalotIcon Icon="AkirossAudioButtonSet4" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green"/>
+                </ToggleButton>
+                
+                <ToggleButton>
+                    <xamlIconLibrary:XamalotIcon Icon="TangoXOfficeCalender" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green"/>
+                </ToggleButton>
+                
+                <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="_3DRotation" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
@@ -237,10 +245,6 @@
                 </ToggleButton>
                 <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="Weekend" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
-                </ToggleButton>
-                
-                <ToggleButton>
-                    <xamlIconLibrary:Akiross_Audio_Button_Set_4 Width="50" Height="50" BorderBrush="Black" BorderThickness="1"/>
                 </ToggleButton>
                 
                 <ToggleButton>
