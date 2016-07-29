@@ -424,6 +424,39 @@
                     <xamlIconLibrary:MaterialDesignIcon Icon="Sword" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Table" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableColumnPlusAfter" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableColumnPlusBefore" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableColumnRemove" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableColumnWidth" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableEdit" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableLarge" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableRowHeight" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableRowPlusAfter" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableRowPlusBefore" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="TableRowRemove" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="Xml" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
                 <ToggleButton>
