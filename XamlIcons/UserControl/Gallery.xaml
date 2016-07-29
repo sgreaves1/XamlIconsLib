@@ -245,6 +245,15 @@
                 <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="Weekend" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Wrench" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="YouTubePlay" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="ZipBox" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
                 
                 <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="AccessPoint" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
