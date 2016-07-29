@@ -477,7 +477,10 @@
                 <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="YingYang" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
-                
+
+                <ToggleButton>
+                    <xamlIconLibrary:GameIcon Icon="Crossbow" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:GameIcon>
+                </ToggleButton>
             </ItemsControl>
         </ScrollViewer>
     </Grid>

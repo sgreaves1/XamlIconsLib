@@ -44,6 +44,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameIcon.xaml.cs">
+      <DependentUpon>GameIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameIcons.cs" />
     <Compile Include="Xamalot\Akiross_Audio_Button_Set_4.xaml.cs">
       <DependentUpon>Akiross_Audio_Button_Set_4.xaml</DependentUpon>
     </Compile>
@@ -65,6 +69,10 @@
     <Compile Include="XamalotIcons.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="GameIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Xamalot\Akiross_Audio_Button_Set_4.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
