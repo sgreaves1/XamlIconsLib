@@ -71,6 +71,17 @@ namespace XamlIconLibrary
         Swim,
         Switch,
         Sword,
+        Table,
+        TableColumnPlusAfter,
+        TableColumnPlusBefore,
+        TableColumnRemove,
+        TableColumnWidth,
+        TableEdit,
+        TableLarge,
+        TableRowHeight,
+        TableRowPlusAfter,
+        TableRowPlusBefore,
+        TableRowRemove,
         Xml,
         Yeast,
         Yelp,
@@ -339,7 +350,51 @@ namespace XamlIconLibrary
                 case MaterialDesignIcons.Sword:
                     info._data = "M24,24 M0,0 M6.92,5H5L14,14L15,13.06M19.96,19.12L19.12,19.96C18.73,20.35 18.1,20.35 17.71,19.96L14.59,16.84L11.91,19.5L10.5,18.09L11.92,16.67L3,7.75V3H7.75L16.67,11.92L18.09,10.5L19.5,11.91L16.83,14.58L19.95,17.7C20.35,18.1 20.35,18.73 19.96,19.12Z";
                     info._author = "Austin Andrews";
-                    break;        
+                    break;
+                case MaterialDesignIcons.Table:
+                    info._data = "M5,4H19A2,2 0 0,1 21,6V18A2,2 0 0,1 19,20H5A2,2 0 0,1 3,18V6A2,2 0 0,1 5,4M5,8V12H11V8H5M13,8V12H19V8H13M5,14V18H11V14H5M13,14V18H19V14H13Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableColumnPlusAfter:
+                    info._data = "M11,2A2,2 0 0,1 13,4V20A2,2 0 0,1 11,22H2V2H11M4,10V14H11V10H4M4,16V20H11V16H4M4,4V8H11V4H4M15,11H18V8H20V11H23V13H20V16H18V13H15V11Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableColumnPlusBefore:
+                    info._data = "M13,2A2,2 0 0,0 11,4V20A2,2 0 0,0 13,22H22V2H13M20,10V14H13V10H20M20,16V20H13V16H20M20,4V8H13V4H20M9,11H6V8H4V11H1V13H4V16H6V13H9V11Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableColumnRemove:
+                    info._data = "M4,2H11A2,2 0 0,1 13,4V20A2,2 0 0,1 11,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M4,10V14H11V10H4M4,16V20H11V16H4M4,4V8H11V4H4M17.59,12L15,9.41L16.41,8L19,10.59L21.59,8L23,9.41L20.41,12L23,14.59L21.59,16L19,13.41L16.41,16L15,14.59L17.59,12Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableColumnWidth:
+                    info._data = "M5,8H19A2,2 0 0,1 21,10V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V10A2,2 0 0,1 5,8M5,12V15H11V12H5M13,12V15H19V12H13M5,17V20H11V17H5M13,17V20H19V17H13M11,2H21V6H19V4H13V6H11V2Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableEdit:
+                    info._data = "M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.08 20.21,11.08 20.42,11.3L21.7,12.58C21.92,12.79 21.92,13.14 21.7,13.35M12,18.94L18.07,12.88L20.12,14.93L14.06,21H12V18.94M4,2H18A2,2 0 0,1 20,4V8.17L16.17,12H12V16.17L10.17,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,6V10H10V6H4M12,6V10H18V6H12M4,12V16H10V12H4Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableLarge:
+                    info._data = "M4,3H20A2,2 0 0,1 22,5V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V5A2,2 0 0,1 4,3M4,7V10H8V7H4M10,7V10H14V7H10M20,10V7H16V10H20M4,12V15H8V12H4M4,20H8V17H4V20M10,12V15H14V12H10M10,20H14V17H10V20M20,20V17H16V20H20M20,12H16V15H20V12Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableRowHeight:
+                    info._data = "M3,5H15A2,2 0 0,1 17,7V17A2,2 0 0,1 15,19H3A2,2 0 0,1 1,17V7A2,2 0 0,1 3,5M3,9V12H8V9H3M10,9V12H15V9H10M3,14V17H8V14H3M10,14V17H15V14H10M23,14V7H19V9H21V12H19V14H23Z";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableRowPlusAfter:
+                    info._data = "";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableRowPlusBefore:
+                    info._data = "";
+                    info._author = "Austin Andrews";
+                    break;
+                case MaterialDesignIcons.TableRowRemove:
+                    info._data = "";
+                    info._author = "Austin Andrews";
+                    break;
                 case MaterialDesignIcons.Xml:
                     info._data = "M24,24 M0,0 M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z";
                     info._author = "Austin Andrews";
