@@ -225,6 +225,9 @@
                     <xamlIconLibrary:GoogleMaterialIcon Icon="RotateRight" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Settings" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="SkipNext" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
