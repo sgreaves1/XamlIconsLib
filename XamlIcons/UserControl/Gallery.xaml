@@ -469,6 +469,24 @@
                     <xamlIconLibrary:MaterialDesignIcon Icon="TableRowRemove" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Wifi" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="WifiOff" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Wii" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="Wikipedia" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="WindowClose" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
+                    <xamlIconLibrary:MaterialDesignIcon Icon="WindowClosed" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:MaterialDesignIcon Icon="Xml" Width="50" Height="50" Foreground="Green" BorderBrush="Black" BorderThickness="1" IconBorderColor="Black" IconBorderThickness="2"></xamlIconLibrary:MaterialDesignIcon>
                 </ToggleButton>
                 <ToggleButton>
