@@ -195,6 +195,9 @@
                     <xamlIconLibrary:GoogleMaterialIcon Icon="KeyboardArrowUp" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Magnify" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="Pause" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>

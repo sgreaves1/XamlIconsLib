@@ -44,6 +44,7 @@
         Fullscreen,
         KeyboardArrowDown,
         KeyboardArrowUp,
+        Magnify,
         Pause,
         PlayArrow,
         Replay,
@@ -204,6 +205,9 @@
                     break;
                 case GoogleMaterialIcons.KeyboardArrowUp:
                     data = "F1 M24,24z M0,0z M7.41,15.41L12,10.83 16.59,15.41 18,14 12,8 6,14z";
+                    break;
+                case GoogleMaterialIcons.Magnify:
+                    data = "F1 M24,24z M0,0z M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z";
                     break;
                 case GoogleMaterialIcons.Pause:
                     data = "F1 M24,24z M0,0z M6,19L10,19 10,5 6,5 6,19z M14,5L14,19 18,19 18,5 14,5z";
