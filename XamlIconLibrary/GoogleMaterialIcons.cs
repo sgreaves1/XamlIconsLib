@@ -28,6 +28,7 @@
         AttachFile,
         AttachMoney,
         BorderColor,
+        Camera,
         Clear,
         Code,
         ContentCopy,
@@ -158,6 +159,9 @@
                     break;
                 case GoogleMaterialIcons.BorderColor:
                     data = "F1 M24,24z M0,0z M17.75,7L14,3.25 4,13.25 4,17 7.75,17 17.75,7z M20.71,4.04C21.1,3.65,21.1,3.02,20.71,2.63L18.37,0.29C17.98,-0.1,17.35,-0.1,16.96,0.29L15,2.25 18.75,6 20.71,4.04z M0,20L24,20 24,24 0,24z";
+                    break;
+                case GoogleMaterialIcons.Camera:
+                    data = "F1 M24,24z M0,0z M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z";
                     break;
                 case GoogleMaterialIcons.Clear:
                     data = "F1 M24,24z M0,0z M19,6.41L17.59,5 12,10.59 6.41,5 5,6.41 10.59,12 5,17.59 6.41,19 12,13.41 17.59,19 19,17.59 13.41,12z";

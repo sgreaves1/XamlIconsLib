@@ -147,6 +147,9 @@
                     <xamlIconLibrary:GoogleMaterialIcon Icon="BorderColor" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
+                    <xamlIconLibrary:GoogleMaterialIcon Icon="Camera" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
+                </ToggleButton>
+                <ToggleButton>
                     <xamlIconLibrary:GoogleMaterialIcon Icon="Clear" Width="50" Height="50" BorderBrush="Black" BorderThickness="1" Foreground="Green" IconBorderColor="Black" IconBorderThickness="2"/>
                 </ToggleButton>
                 <ToggleButton>
